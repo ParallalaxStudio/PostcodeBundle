@@ -1,0 +1,22 @@
+{
+  "name" : "parallalax/postcodebundle",
+  "description" : "Controllers to give access to postcodes and cities",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "ParallalaxStudio",
+    "email" : "contact@parallalaxstudio.fr"
+  }],
+  "license" : [
+    "MIT"
+  ],
+  "autoload" : {
+    "psr-4" : {
+      "Parallalax\\PostcodeBundle\\" : ""
+    }
+  },
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "1.0.x-dev"
+    }
+  }
+}
