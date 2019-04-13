@@ -1,0 +1,15 @@
+parallalax_postcode_city_search:
+    path:  /parallalax/city/search/{search}/{postcode}
+    defaults: { _controller: ParallalaxPostcodeBundle:Default:getCityFromSearch, "search":0, "postcode": 0 }
+    requirements:
+        postcode: \d+
+
+parallalax_postcode:
+    path:  /parallalax/city/{postcode}
+    defaults: { _controller: ParallalaxPostcodeBundle:Default:getCityFromPostcode, "postcode":0 }
+    requirements:
+        postcode: \d+
+
+parallalax_postcode_search:
+    path:  /parallalax/postcode/search/{search}
+    defaults: { _controller: ParallalaxPostcodeBundle:Default:getPostcodeFromSearch, "search":0}

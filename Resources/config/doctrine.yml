@@ -1,0 +1,18 @@
+doctrine:
+    dbal:
+        connections:
+            parallalax_postcode:
+              driver:   "%parallalax.postcode.database_driver%"
+              host:     "%parallalax.postcode.database_host%"
+              port:     "%parallalax.postcode.database_port%"
+              dbname:   "%parallalax.postcode.database_name%"
+              user:     "%parallalax.postcode.database_user%"
+              password: "%parallalax.postcode.database_password%"
+
+    orm:
+        entity_managers:
+            parallalax_postcode:
+                connection:       parallalax_postcode
+                naming_strategy: doctrine.orm.naming_strategy.underscore
+                mappings:
+                    ParallalaxPostcodeBundle: ~
