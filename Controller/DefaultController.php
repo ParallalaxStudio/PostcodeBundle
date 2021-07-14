@@ -2,10 +2,10 @@
 
 namespace Parallalax\PostcodeBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController
 use Symfony\Component\HttpFoundation\JsonResponse;
 
-class DefaultController extends Controller
+class DefaultController extends AbstractController
 {
 
     public function getCityFromPostcodeAction($postcode) {
